@@ -11,8 +11,16 @@
   </head>
   <body>
     <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+      <div class="image">
+        <img src="/src/images/avatar.jpg" alt="image" />
+      </div>
     </div>
+
+    <script>
+      let image = document.querySelector('.image');
+      image.addEventListener('click', () => {
+        image.style.transform = 'scale(2)';
+      });
+    </script>
   </body>
 </html>
